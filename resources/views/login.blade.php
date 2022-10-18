@@ -15,7 +15,6 @@
         <div class="min-h-screen flex flex-col items-center pt-6 bg-gray-100 sm:justify-center sm:pt-6">
             <div>
                 <a href="/">
-                    {{-- <svg viewBox="0 0 316 316" class="w-20 h-20 fill-current text-gray-500"></svg> --}}
                     <img src="images/puzzle.png" alt="logo" class="w-20 h-20 fill-current text-gray-500">
                 </a>
             </div>
