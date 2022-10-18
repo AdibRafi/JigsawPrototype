@@ -19,7 +19,8 @@
                     <img src="images/puzzle.png" alt="logo" class="w-20 h-20 fill-current text-gray-500">
                 </a>
             </div>
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            {{-- Container for input --}}
+            <div class="w-11/12 sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{-- Email --}}
                 <div>
                     <label for="email" class="block font-medium text-sm text-gray-700">Email</label>
