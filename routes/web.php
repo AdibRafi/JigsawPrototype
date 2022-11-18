@@ -32,3 +32,7 @@ Route::get('/profile', function () {
 Route::get('/session', function () {
    return view('student.sessionView');
 });
+
+Route::get('/test', function () {
+   return view('test');
+});
