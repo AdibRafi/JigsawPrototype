@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test</title>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 
 <body>
     <h1 class=" bg-slate-600">welcome vue</h1>
-    <div class="app"></div>
-    <div id="apptest"></div>
-    @vite('resources/js/app.js')
+    <div id="studentList"></div>
 </body>
 
 </html>

@@ -45,3 +45,6 @@ app.mount('#app')
 
 
 // createApp(app).mount('#app')
+
+import StudentList from './components/StudentList.vue';
+createApp(StudentList).mount('#studentList')
