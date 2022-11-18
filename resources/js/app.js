@@ -48,3 +48,6 @@ app.mount('#app')
 
 import StudentList from './components/StudentList.vue';
 createApp(StudentList).mount('#studentList')
+
+import CreateTopic from './components/CreateTopic.vue'
+createApp(CreateTopic).mount('#createTopic')

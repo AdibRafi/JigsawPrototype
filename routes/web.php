@@ -36,3 +36,7 @@ Route::get('/session', function () {
 Route::get('/test', function () {
    return view('test');
 });
+
+Route::get('/createTopic', function () {
+   return view('lecturer.createTopic');
+});
