@@ -51,3 +51,6 @@ createApp(StudentList).mount('#studentList')
 
 import CreateTopic from './components/CreateTopic.vue'
 createApp(CreateTopic).mount('#createTopic')
+
+import Present from './components/Present.vue'
+createApp(Present).mount('#present');

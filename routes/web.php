@@ -40,3 +40,7 @@ Route::get('/test', function () {
 Route::get('/createTopic', function () {
    return view('lecturer.createTopic');
 });
+
+Route::get('/present', function () {
+   return view('presentation.Present');
+});
