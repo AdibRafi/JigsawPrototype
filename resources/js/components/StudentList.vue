@@ -8,32 +8,25 @@
          </div>
       </div>
    </div>
-   <button class="m-2 p-2 border-none rounded bg-slate-400 text-white">Go to material</button>
+   <button class="m-2 p-2 border-none rounded bg-slate-400 text-white" @click="count += 10">Go to material</button>
+   <p>{{ count }}</p>
 </template>
-<script>
-// import '../bootstrap.js'
+<script setup>
+import '../bootstrap.js'
 import { onMounted, ref } from "vue";
-import axios from 'axios';
+// import axios from 'axios';
 
-export default {
-   setup() {
-      const datas = ref([])
-      let testData = ref([]);
+const datas = ref([])
+let testData = ref([]);
+const count = ref(0)
 
-      onMounted(() => {
-         axios.get("http://jigsawprototype.test/api/test")
-            .then((res) => {
-               datas.value = res.data.datas;
-               console.log('it work')
-               console.log(datas.value)
-            })
-            .catch((err) =>
-               console.log(err.data.datas))
+onMounted(() => {
+   axios.get("http://jigsawprototype.test/api/test")
+      .then((res) => {
+         datas.value = res.data.datas;
       })
-      return { testData, datas }
-
-   }
-
-}
+      .catch((err) =>
+         console.log(err.data.datas))
+})
 
 </script>
