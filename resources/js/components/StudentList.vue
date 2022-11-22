@@ -10,18 +10,13 @@
    </div>
 </template>
 <script>
+import getDataTest from "../getDataTest.js"
 export default {
    setup() {
-      const datas = [
-         { name: 'student one', group: 'group one', img: '/images/emoji.png' },
-         { name: 'student two', group: 'group two', img: '/images/emoji.png' },
-         { name: 'student three', group: 'group three', img: '/images/emoji.png' },
-         { name: 'student four', group: 'group four', img: '/images/emoji.png' },
-         { name: 'student five', group: 'group five', img: '/images/emoji.png' },
-         { name: 'student six', group: 'group six', img: '/images/emoji.png' },
-      ]
-
-      return { datas }
-   }
+      const { datas, error, load } = getDataTest();
+      load();
+      return { datas, error }
+   },
 }
+
 </script>

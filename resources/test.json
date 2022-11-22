@@ -1,0 +1,34 @@
+{
+   "products": [
+      {
+         "name": "student one",
+         "group": "Group one",
+         "img": "/images/emoji.png"
+      },
+      {
+         "name": "student two",
+         "group": "Group two",
+         "img": "/images/emoji.png"
+      },
+      {
+         "name": "student three",
+         "group": "Group three",
+         "img": "/images/emoji.png"
+      },
+      {
+         "name": "student four",
+         "group": "Group four",
+         "img": "/images/emoji.png"
+      },
+      {
+         "name": "student five",
+         "group": "Group five",
+         "img": "/images/emoji.png"
+      },
+      {
+         "name": "student six",
+         "group": "Group six",
+         "img": "/images/emoji.png"
+      }
+   ]
+}
