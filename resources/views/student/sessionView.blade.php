@@ -19,7 +19,6 @@
         </div>
         <div class="p-5">
             <div id="studentList"></div>
-            <button class="m-2 p-2 border-none rounded bg-slate-400 text-white">Go to material</button>
         </div>
     </div>
 </body>

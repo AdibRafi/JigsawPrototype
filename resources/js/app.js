@@ -17,8 +17,8 @@ import { createApp } from 'vue';
 
 
 
-import ExampleComponent from './components/ExampleComponent.vue';
-const app = createApp(ExampleComponent);
+// import ExampleComponent from './components/ExampleComponent.vue';
+// const app = createApp(ExampleComponent);
 
 // app.component('example-component', ExampleComponent);
 
@@ -40,7 +40,7 @@ const app = createApp(ExampleComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app')
+// app.mount('#app')
 
 
 
