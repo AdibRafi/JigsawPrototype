@@ -44,3 +44,7 @@ Route::get('/createTopic', function () {
 Route::get('/present', function () {
    return view('presentation.Present');
 });
+
+Route::get('/lectDashboard', function () {
+   return view('lecturer.dashboard');
+});

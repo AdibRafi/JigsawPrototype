@@ -8,6 +8,7 @@
 // import "https://js.pusher.com/7.2/pusher.min.js";
 // import "https://cdn.jsdelivr.net/npm/vue/dist/vue.js";
 import { createApp } from 'vue';
+import router from '../router'
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -54,3 +55,8 @@ createApp(CreateTopic).mount('#createTopic')
 
 import Present from './components/Present.vue'
 createApp(Present).mount('#present');
+
+import Dashboard from './components/Dashboard.vue'
+const dashboardApp = createApp(Dashboard)
+dashboardApp.use(router)
+dashboardApp.mount('#dashboard')
