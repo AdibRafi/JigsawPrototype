@@ -48,3 +48,7 @@ Route::get('/present', function () {
 Route::get('/lectDashboard', function () {
    return view('lecturer.dashboard');
 });
+
+Route::get('/lectDashboard/{any}', function () {
+   return view('lecturer.dashboard');
+})->where('any', '.*');

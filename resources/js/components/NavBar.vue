@@ -4,7 +4,7 @@
          <div id="nav" class=" bg-slate-300 rounded-xl">
             <router-link to="/lectDashboard">Home</router-link>
             <router-link :to="{ name: 'createTopic' }">Topic</router-link>
-            <router-link to="/">Jobs</router-link>
+            <router-link :to="{ name: 'createAssessment' }">Assessment</router-link>
          </div>
       </div>
       <div class="float-right">
