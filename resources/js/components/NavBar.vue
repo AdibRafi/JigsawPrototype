@@ -3,7 +3,7 @@
       <div class=" float-left">
          <div id="nav" class=" bg-slate-300 rounded-xl">
             <router-link to="/lectDashboard">Home</router-link>
-            <router-link to="/">About</router-link>
+            <router-link :to="{ name: 'createTopic' }">Topic</router-link>
             <router-link to="/">Jobs</router-link>
          </div>
       </div>
@@ -15,18 +15,8 @@
       </div>
    </div>
 
-   <div class="m-12 p-20 bg-green-100">
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
+   <div class="m-12">
+      <router-view></router-view>
    </div>
 </template>
 

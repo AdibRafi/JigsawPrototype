@@ -1,6 +1,6 @@
 <template>
    <div class="font-sans text-gray-900 antialiased">
-      <div class="min-h-screen flex flex-col items-center pt-6 bg-gray-100 sm:justify-center sm:pt-6">
+      <div class="flex flex-col items-center pt-6 bg-gray-100 sm:justify-center sm:pt-6 rounded-xl">
          <h1 class=" text-xl"> Create Topic</h1>
          <p> contoh -> {{ name }} {{ description }}</p>
          <div class="w-11/12 sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">

@@ -50,13 +50,13 @@ import router from '../router'
 import StudentList from './components/StudentList.vue';
 createApp(StudentList).mount('#studentList')
 
-import CreateTopic from './components/CreateTopic.vue'
-createApp(CreateTopic).mount('#createTopic')
+// import CreateTopic from './components/CreateTopic.vue'
+// createApp(CreateTopic).mount('#createTopic')
 
 import Present from './components/Present.vue'
 createApp(Present).mount('#present');
 
-import Dashboard from './components/Dashboard.vue'
+import Dashboard from './components/NavBar.vue'
 const dashboardApp = createApp(Dashboard)
 dashboardApp.use(router)
 dashboardApp.mount('#dashboard')
