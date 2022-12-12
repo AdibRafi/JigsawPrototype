@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <h1 class=" bg-slate-600">welcome vue</h1>
-    <div id="studentList"></div>
+    {{-- <h1 class=" bg-slate-600">welcome vue</h1> --}}
+    <div id="sidebar"></div>
 </body>
 
 </html>

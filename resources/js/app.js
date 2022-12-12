@@ -10,6 +10,7 @@
 import { createApp } from 'vue';
 import router from '../router'
 
+
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
  * registering components with the application instance so they are ready
@@ -56,7 +57,30 @@ createApp(StudentList).mount('#studentList')
 import Present from './components/Present.vue'
 createApp(Present).mount('#present');
 
-import Dashboard from './components/NavBar.vue'
-const dashboardApp = createApp(Dashboard)
-dashboardApp.use(router)
-dashboardApp.mount('#dashboard')
+
+
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesLeft, faHouse, faTableColumns } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import Sidebar from './components/sidebar/App.vue'
+
+
+library.add(faUserSecret)
+library.add(faAnglesLeft)
+library.add(faHouse)
+library.add(faTableColumns)
+
+
+
+const sidebar = createApp(Sidebar)
+sidebar.component('font-awesome-icon', FontAwesomeIcon)
+// sidebar.component('sidebarTest', Sidebar)
+sidebar.use(router)
+sidebar.mount('#sidebar')
+
+
