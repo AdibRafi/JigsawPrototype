@@ -6,31 +6,27 @@
          <div class="w-11/12 sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             <form @submit="formSubmit">
                <div>
-                  <label for="topic" class="block font-medium text-sm text-gray-700">Topic</label>
-                  <input type="text" id="" name="" required="required" autofocus="autofocus" class="rounded-md shadow-sm border border-gray-300 focus:border-indigo-300 focus:ring
-                  focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full">
+                   <InputForm input-id="topic" input-type="text"
+                              label-for="topic" label-name="Topic"/>
                </div>
                <div class="mt-4">
-                  <label for="" class="block font-medium text-sm text-gray-700">Module</label>
-                  <input type="text" id="" name="" required="required" autofocus="autofocus" class="rounded-md shadow-sm border border-gray-300 focus:border-indigo-300 focus:ring
-                focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full">
+                   <InputForm input-id="module" input-type="text"
+                              label-for="module" label-name="Module" />
                </div>
                <div class="mt-4">
-                  <label for="" class="block font-medium text-sm text-gray-700">Expert Session</label>
-                  <input type="text" id="" name="" required="required" autofocus="autofocus" class="rounded-md shadow-sm border border-gray-300 focus:border-indigo-300 focus:ring
-             focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" v-model="name">
+                   <InputForm input-id="" input-type="text"
+                              label-for="" label-name="Expert Session" />
                </div>
                <div class="mt-4">
-                  <label for="" class="block font-medium text-sm text-gray-700">Jigsaw Session</label>
-                  <input type="text" id="" name="" required="required" autofocus="autofocus" class="rounded-md shadow-sm border border-gray-300 focus:border-indigo-300 focus:ring
-          focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" v-model="group">
+                   <InputForm input-id="" input-type="text"
+                              label-for="" label-name="Jigsaw Session" />
                </div>
 
                <div class="flex items-center justify-end mt-4">
                   <button @click="clickTest" type="submit" class="inline-flex items-center px-4 py-2 bg-gray-800
                    border border-transparent rounded-md font-semibold text-xs text-white uppercase
                    tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none
-                   focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 
+                   focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25
                    transition ease-in-out duration-150 ml-3">Create
                      Group</button>
                </div>
@@ -42,6 +38,7 @@
 
 <script setup>
 import axios from 'axios';
+import InputForm from "../reusable/inputForm.vue";
 import { ref } from 'vue';
 const name = ref('')
 const description = ref('')
