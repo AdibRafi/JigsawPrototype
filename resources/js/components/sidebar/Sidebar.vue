@@ -10,8 +10,9 @@
             </h1>
          </span>
       </h1>
-      <SidebarLink to="/test" icon="fa-solid fa-house">Home</SidebarLink>
-      <SidebarLink to="/About" icon="fa-solid fa-table-columns">About</SidebarLink>
+      <SidebarLink to="dashboard" icon="fa-solid fa-house">Home</SidebarLink>
+      <SidebarLink to="createTopic" icon="fa-solid fa-table-columns">Create Topic</SidebarLink>
+      <SidebarLink to="createAssessment" icon="fa-solid fa-check">Assessment</SidebarLink>
 
 
       <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar">

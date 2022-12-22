@@ -52,3 +52,11 @@ Route::get('/lectDashboard', function () {
 Route::get('/lectDashboard/{any}', function () {
    return view('lecturer.dashboard');
 })->where('any', '.*');
+
+Route::get('/LecturerSide',function (){
+    return view('lecturer.index');
+});
+
+Route::get('/LecturerSide/{any}', function () {
+    return view('lecturer.index');
+})->where('any', '.*');

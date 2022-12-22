@@ -5,7 +5,7 @@
       </div>
    </Sidebar>
    <div :style="{ 'margin-left': sidebarWidth }">
-      <h3>test</h3>
+      <h3>testfrom app</h3>
    </div>
 </template>
 
