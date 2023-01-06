@@ -60,7 +60,7 @@ export default {
     background-color: var(--sidebar-item-hover);
 }
 
-.link.active {
+a.router-link-exact-active {
     background-color: var(--sidebar-item-active);
 }
 

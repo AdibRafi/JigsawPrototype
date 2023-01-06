@@ -2,11 +2,11 @@
    <div class="sidebar" :style="{ width: sidebarWidth }">
       <h1>
          <span v-if="collapsed">
-            <h1 class=" text-xl">JC</h1>
+            <h1 class=" text-xl">PP</h1>
          </span>
          <span v-else>
             <h1 class=" text-xl">
-               Jigsaw Classroom
+               PuzzlePoint
             </h1>
          </span>
       </h1>
