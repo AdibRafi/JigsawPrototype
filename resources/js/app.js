@@ -83,4 +83,9 @@ sidebar.component('font-awesome-icon', FontAwesomeIcon)
 sidebar.use(router)
 sidebar.mount('#sidebar')
 
+import Test from "../views/test.vue";
+
+const test = createApp(Test).mount("#test");
+
+
 
