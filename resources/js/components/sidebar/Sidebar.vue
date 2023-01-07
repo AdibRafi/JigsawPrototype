@@ -12,7 +12,8 @@
       </h1>
       <SidebarLink to="dashboard" icon="fa-solid fa-house">Home</SidebarLink>
       <SidebarLink to="createTopic" icon="fa-solid fa-table-columns">Create Topic</SidebarLink>
-      <SidebarLink to="createAssessment" icon="fa-solid fa-check">Assessment</SidebarLink>
+       <sidebar-link icon="fa-laptop-file" to="createModule"> Create Module</sidebar-link>
+       <SidebarLink to="createAssessment" icon="fa-solid fa-check">Assessment</SidebarLink>
 
 
       <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar">

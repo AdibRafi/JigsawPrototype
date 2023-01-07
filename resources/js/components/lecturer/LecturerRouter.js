@@ -2,9 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from './Dashboard.vue'
 import CreateTopic from './CreateTopic.vue'
 import CreateAssessment from './CreateAssessment.vue'
+import CreateModule from "./CreateModule.vue";
 
 
-const lectRouter = createRouter({
+const lecturerRouter = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
@@ -18,6 +19,11 @@ const lectRouter = createRouter({
             component: CreateTopic
         },
         {
+            path: '/LecturerSide/CreateModule',
+            name: 'createModule',
+            component: CreateModule,
+        },
+        {
             path: '/LecturerSide/CreateAssessment',
             name: 'createAssessment',
             component: CreateAssessment
@@ -25,4 +31,4 @@ const lectRouter = createRouter({
     ]
 })
 
-export default lectRouter
+export default lecturerRouter

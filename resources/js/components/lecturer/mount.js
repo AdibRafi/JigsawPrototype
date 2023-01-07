@@ -6,7 +6,7 @@ createApp(CreateTopic).mount("#createTopic")
 
 import "../iconLibrary";
 import Index from "./index.vue";
-import LectRouter from "./LectRouter";
+import LectRouter from "./LecturerRouter";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 const index = createApp(Index)
