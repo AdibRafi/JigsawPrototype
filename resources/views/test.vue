@@ -1,43 +1,60 @@
 <template>
-    <div class="font-sans text-gray-900 antialiased">
-        <div class="pt-6 bg-gray-100 justify-center rounded-xl min-h-screen">
-            <div class="flex flex-col items-center pt-6">
-                <!--                <h1 class="text-xl font-bold">MODULE</h1>-->
-                <ul class="steps w-96">
-                    <li class="step step-primary">Topic</li>
-                    <li class="step step-primary">Modules</li>
-                    <li class="step step">Options</li>
-                    <li class="step step">Verify</li>
+    <div class="navbar bg-base-100 bg-green-400">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li tabindex="0">
+                        <a class="justify-between">
+                            Create
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                        </a>
+                        <ul class="p-2">
+                            <li><a>Topic</a></li>
+                            <li><a>Module</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Assessment</a></li>
                 </ul>
-                <div v-for="items in 4" class="m-4">
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h1 class="font-bold">Module {{ items }}</h1>
-                            <InputForm label-name="Module Name"/>
-                            <InputForm label-name="KeyPoints"/>
-                            <div class="card-actions justify-end mt-5">
-                                <input type="file"
-                                       class="file-input file-input-bordered file-input-primary w-full max-w-xs">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl m-4">
-                    <div class="card-body">
-                        <h2 class="card-title">Make sure to check!</h2>
-                        <div class="card-actions justify-end">
-                            <submit-button button-name="Proceed"/>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <a class="btn btn-ghost normal-case text-xl">PuzzlePoint</a>
         </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li tabindex="0">
+                    <a>
+                        Create
+                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="p-2">
+                        <li><a>Topic</a></li>
+                        <li><a>Module</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <router-link :to="{name:'createAssessment'}">test</router-link>
+                </li>
+                <li><a>Assessment</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-ghost">Logout</a>
+        </div>
+    </div>
+    <div>
+        <p>contentlegit</p>
+        <router-view></router-view>
     </div>
 </template>
 
 <script setup>
 import InputForm from "../js/components/reusable/inputForm.vue";
 import SubmitButton from "../js/components/reusable/submitButton.vue";
+import createAssessment from "../js/components/lecturer/CreateAssessment.vue";
 </script>
 
 <style scoped>

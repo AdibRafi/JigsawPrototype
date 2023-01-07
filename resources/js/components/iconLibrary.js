@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import {faLaptopFile, faUserSecret} from '@fortawesome/free-solid-svg-icons'
+import {faArrowRightFromBracket, faBars, faLaptopFile, faUserSecret} from '@fortawesome/free-solid-svg-icons'
 import { faAnglesLeft, faHouse, faTableColumns, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -11,3 +11,5 @@ library.add(faHouse)
 library.add(faTableColumns)
 library.add(faCheck)
 library.add(faLaptopFile);
+library.add(faArrowRightFromBracket);
+library.add(faBars);

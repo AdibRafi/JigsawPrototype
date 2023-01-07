@@ -84,8 +84,11 @@ sidebar.use(router)
 sidebar.mount('#sidebar')
 
 import Test from "../views/test.vue";
+import LecturerRouter from "./components/lecturer/LecturerRouter";
 
-const test = createApp(Test).mount("#test");
+const test = createApp(Test);
+test.use(LecturerRouter)
+test.mount("#test");
 
 
 
