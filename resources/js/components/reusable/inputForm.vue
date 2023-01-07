@@ -8,7 +8,8 @@
             <span class="label-text block font-medium text-gray-700">{{ labelName }}</span>
         </label>
         <input :type="inputType" :id="inputId" :placeholder="inputPlaceholder"
-               class="input input-primary input-bordered input-sm w-full max-w-xs"/>
+               class="input input-primary input-bordered input-sm w-full max-w-xs"
+        :value="modelValue" @input='$emit("update:modelValue",$event.target.value)'/>
     </div>
 </template>
 
